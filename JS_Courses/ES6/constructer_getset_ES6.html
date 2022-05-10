@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Thermostat
+{
+  constructor(temp)
+  {
+    this.temp = temp;
+  }
+  get temperature()
+  {
+    return 5/9 * (this.temp - 32)
+  }
+  set temperature(update_temp)
+  {
+    this.temp = update_temp * 9.0 / 5 + 32;
+  }
+}
+
+
+const thermos = new Thermostat(76); 
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+    </script>
+</body>
+</html>

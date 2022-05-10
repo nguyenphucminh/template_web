@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function solution(picture) 
+    {
+    var lineLength = picture[0].length;
+    var fullBord = "**";
+    
+    for (var i = 0; i < lineLength; i++) 
+    {
+        fullBord += "*";
+    }
+    
+    for (var j = 0; j < picture.length; j++) 
+    {
+        picture[j] = "*" + picture[j] + "*";
+    }
+    
+    picture.unshift(fullBord);
+    picture.push(fullBord);
+    
+    return picture;
+}
+    console.log(solution( ["abc","ded"]));
+    // console.log(solution( ["aa", "**", "zz"]));
+    // console.log(solution(  ["*******", "*wzy***", "*******"]));
+   
+    </script>
+</body>
+</html>

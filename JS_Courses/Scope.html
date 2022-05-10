@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function func_scope() 
+    { 
+    let l = 100; 
+    var v = 200; 
+    const c = 300;
+    console.log(" in function " + l);
+    console.log(" in function " + v);
+    console.log(" in function " + c);
+    }
+    func_scope() 
+    console.log(l);
+    console.log(v);
+    console.log(c);
+    //=> cả ba đều có phạm vi trong function, ra ngoài sẽ not defined
+
+    const i = 1;
+    if(i > 0) //block_scope
+    {
+     var v = 100;
+     let l = 200;
+     const c = 300;
+     console.log(l);
+     console.log(v);
+     console.log(c);
+    }
+    const c = 300;
+    console.log(" in block if " + l);
+    console.log(" in block if " + v);
+    console.log(" in block if " + c);
+
+
+
+    </script>
+</body>
+</html>

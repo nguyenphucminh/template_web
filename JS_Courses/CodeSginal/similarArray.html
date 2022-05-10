@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function solution(a, b) 
+    {
+        var i = 0,
+        length = a.length,
+        diff = [];
+    
+    for( ;i<length;i++)
+    {
+        // Nếu các phần tử tương ứng trong a và b không bằng nhau, hãy đẩy vị trí của mảng khác sẽ được sử dụng sau này.
+        if(a[i] !== b[i])
+        {
+            diff.push(i);
+        }
+    }
+    
+    // Nếu không có sự khác biệt thì các mảng tương tự nhau.
+    if(diff.length === 0)
+    {
+        return true;
+    }
+    
+    // Nếu có 2 điểm khác biệt, hãy kiểm tra xem bạn có thể hoán đổi phần tử để tạo các mảng bằng nhau.
+    if(diff.length === 2)
+    {
+        if(a[diff[0]] === b[diff[1]] && a[diff[1]] === b[diff[0]])
+        {
+            return true;
+        }
+    }
+    
+   // Nếu các điều kiện trước đó không trả về true, các mảng không được giống nhau.
+    return false;
+}
+console.log(solution( [1, 1, 4],[1, 2, 3]))
+    </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // let testStr = "freeCodeCamp";
+        // let testRegex = /Code/;
+        // testRegex.test(testStr); ->true
+
+        // let testStr = "freeCodeCamp";
+        // let testRegex = /codecamp/;
+        // testRegex.test(testStr); ->fasle
+
+        // let petString = "James has a pet cat.";
+        // let petRegex = /dog|cat|mouse|fish/; 
+        // let result = petRegex.test(petString); ->true
+
+        // let petString = "James has a pet cat.";
+        // let petRegex = /dog|mouse|fish/; 
+        // let result = petRegex.test(petString); ->false
+
+        // let myString = "freeCodeCamp";
+        // let fccRegex = /fr/i; 
+        // let result = fccRegex.test(myString); ->true (chữ i là không phân biệt chữ hoa và thường)
+
+        // let extractStr = "Extract the word 'coding' from this string.";
+        // let codingRegex = /coding/;
+        // let result = extractStr.match(codingRegex);
+        // console.log(result); -> (1) ['coding', index:18 ]  (match là phương thức điều kiện)
+
+        // let twinkleStar = "Twinkle, twinkle, little star";
+        // let starRegex = /Twinkle/gi;                 
+        // let result = twinkleStar.match(starRegex); 
+        // console.log(result); ->[Twinkle, twinkle]    (chữ g là lấy hết tất cả những gì liên quan)
+
+        // let humStr = "I'll hum a song";
+        // let hugStr = "Bear hug";
+        // let huRegex = /hu./;
+        // huRegex.test(humStr); ->true
+        // huRegex.test(hugStr); ->true        (dấu . để test các case có chữ u)
+
+        // let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+        // let vowelRegex = /[aeiou]/gi;
+        // let result = quoteSample.match(vowelRegex); ->(25)[e, a, e, o, u, i,....]
+
+        // let quoteSample = "The quick brown fox jumps over the lazy dog.";
+        // let alphabetRegex = /[a-z]/gi; 
+        // let result = quoteSample.match(alphabetRegex); ->(35) [T,h,e,q,u,i,c,k,....]
+
+        // let quoteSample = "Blueberry 3.141592653s are delicious.";
+        // let myRegex = /[h-s2-6]/gi; 
+        // let result =quoteSample.match(myRegex) ; ->(17) [l,r,r,3,4,5,2,6,...]   (lấy từ h-s và từ 2-6)
+
+        // let quoteSample = "3 blind mice.";
+        // let myRegex = /[^0-9aeiou]/gi;
+        // let result = quoteSample.match(myRegex); ->(9) ['', 'b', 'l', 'n', 'd', '', 'm', 'c', '.']
+        // (dấu ^ sẽ không lấy từ 0-9, không lấy các ký tự aeoiu)
+
+        // let difficultSpelling = "Mi SSsss issi ppis";
+        // let myRegex = /s+/g; 
+        // let result = difficultSpelling.match(myRegex); ->(3) ['sss', 'ss', 's']
+        // (dấu + sẽ lấy các ký tự s liền kề giống với chữ s, ký tự xuất hiện một hoặc nhiều lần)
+    
+
+        //    let A = "gooooooooal!";
+        //    let B = "gut feeling";
+        //    let C = "over the moon";
+        //    let goRegex = /go*/;
+        //    A.match(goRegex);  ->["goooooooo"]
+        //    B.match(goRegex);  ->["g"]
+        //    C.match(goRegex);  ->null
+        //    (dấu * sẽ lấy ký tự xuất hiện không hoặc nhiều lần.)
+
+        // let A = "abcidefi is a very good movie"
+        // let B = "abcdefig is a very good movie"
+        // let C = "abcdefgi is a very good movie"
+        // let myRegex = /a[a-z]*?i/;
+        // let result = A.match(myRegex); ->(1) ['abci']
+        // let result = B.match(myRegex); ->(1) ['abcdefi']
+        // let result = C.match(myRegex); ->(1) ['abcdefgi']
+        // (biểu thức cho chạy từ a-i, dấu ? thể hiện là thuật toán lười biếng, sẽ lấy
+        // ký tự i gần nhất và bỏ những ký tự i còn lại.)
+
+
+        // let text = "<h1>Winter is coming</h1>";
+        // let myRegex = /<.*?>/; 
+        // let result = text.match(myRegex); ->(1) [<h1>]
+        //(ký tự đại diện . trong một biểu thức chính quy khớp với bất kỳ ký tự nào)
+
+        // let rickyAndCal = "Cal and Ricky both like racing.";
+        // let calRegex = /^Cal/;
+        // let result = calRegex.test(rickyAndCal); ->(1) ['Cal']
+        // (Ngoài phủ định bằng dấu ^, dấu ^ còn được sử dụng để tìm kiếm các mẫu ở đầu chuỗi.)
+  
+        // let caboose = "The last car on a train is the caboose";
+        // let lastRegex = /caboose$/; 
+        // let result = lastRegex.test(caboose);  ->(1) ['caboose']
+        // (Bạn có thể tìm kiếm cuối chuỗi bằng cách sử dụng ký tự đô la $ ở cuối regex.)
+
+        // let quoteSample = "The five boxing wizards jump quickly.";
+        // let alphabetRegexV2 = /\w/gi; 
+        // let result = quoteSample.match(alphabetRegexV2); ->(31) ['T','h','e','f',...]
+        // (bộ ký tự /[A-Za-z0-9_]+/ được thay bằng bộ ngắn gọn  /\w+/)
+
+        // let quoteSample = "The five boxing wizards jump quickly.";
+        // let nonAlphabetRegex = /\W/g;
+        // let result = quoteSample.match(nonAlphabetRegex); ->(6) [' ', ' ', ' ', ' ', ' ', ' ']
+        // (giống với /\w/ nhưng /\W/ ngược lại, tức là nó sẽ phủ định /[^A-Za-z0-9_]+/)
+
+        // let movieName = "2001: A Space Odyssey";
+        // let noNumRegex = /\d/g; 
+        // let result = movieName.match(noNumRegex); ->(4) ['2','0','0','1']
+        // (bộ ký tự [0-9] được thay bằng bộ ngắn gọn /\d/)
+
+        // let movieName = "2001: A Space Odyssey";
+        // let noNumRegex = /\D/g; 
+        // let result = movieName.match(noNumRegex); -> (17) [':', '', 'A', ' ', 'S',...]
+        // (giống với /\d/ nhưng /\D/ ngược lại, tức là nó sẽ phủ định [^0-9])
+
+        // let testStr = "Pumpkin";
+        // let testRegex = /P(engu|umpk)in/;
+        // testRegex.test(testStr);
+        //(Nếu bạn muốn tìm một trong hai Penguinhoặc Pumpkintrong một chuỗi : /P(engu|umpk)in/g)
+
+        // let username = "JackOfAllTrades";
+        // let userCheck = /^[a-z]([a-z]+|\d\d)\d*$/i;
+        // let result = userCheck.test(username);
+        //(Tên người dùng chỉ có thể sử dụng các ký tự chữ và số. 
+        //Các số duy nhất trong tên người dùng phải ở cuối. Có thể có 0 hoặc nhiều hơn ở cuối. Tên người dùng không được bắt đầu bằng số.
+        //Chữ cái tên người dùng có thể là chữ thường và chữ hoa.
+        //Tên người dùng phải dài ít nhất hai ký tự. Tên người dùng có hai ký tự chỉ có thể sử dụng các ký tự trong bảng chữ cái làm ký tự.)
+
+        // let sample = "Whitespace is important in separating words";
+        // let countWhiteSpace = /\s/g; 
+        // let result = sample.match(countWhiteSpace); ->(5) [' ', ' ', ' ', ' ', ' ',]
+        //(\s sẽ tìm ký tự khoảng trắng, giống với bộ ký tự [\r\t\f\n\v])
+
+        // let sample = "Whitespace is important in separating words";
+        // let countNonWhiteSpace = /\S/g; 
+        // let result = sample.match(countNonWhiteSpace); ->(32) ['W', 'h', 'i', 't',....]
+        // //(\S sẽ ngược lại với \s, tức là giống bộ ký tự [^ \r\t\f\n\v])
+
+        // let A4 = "aaaah";
+        // let A2 = "aah";
+        // let multipleA = /a{3,5}h/;
+        // multipleA.test(A4); -> true
+        // multipleA.test(A2); ->false
+        // ({3,5} là tìm ký tự a liền kề từ 3 đến 5 chữ a cho đến h)
+
+        // let A4 = "haaaah";
+        // let A2 = "haah";
+        // let A100 = "h" + "a".repeat(100) + "h";
+        // let multipleA = /ha{3,}h/;
+        // multipleA.test(A4); -> true
+        // multipleA.test(A2); -> false
+        // multipleA.test(A100); ->true
+        //(Ví dụ: để chỉ khớp chuỗi hahcó ký tự a xuất hiện ít nhất 3lần, thì regex của bạn sẽ là /ha{3,}h/.)
+
+        // let haStr = "Hazzzzah";
+        // let haRegex = /Haz{4,}ah/; 
+        // let result = haRegex.test(haStr); ->true
+        //(Hazzahchỉ khi nó có bốn chữ cái trở lên z.)
+
+        // let timStr = "Timmmmber";
+        // let timRegex = /Tim{4}b/;
+        // let result = timRegex.test(timStr); ->true
+        // (Timmmmber sẽ được định lượng chính xác có 4 chữ, không có dấu phẩy là định lượng chính xác)
+
+        // let american = "color";
+        // let british = "colour";
+        // let rainbowRegex= /colou?r/;
+        // rainbowRegex.test(american); -> true
+        // rainbowRegex.test(british); -> true
+        // (Dấu ? kiểm tra chuỗi đó có tồn tại, nó sẽ phù hợp với tùng cách viết)
+
+        // let A = "favourite";
+        // let B = "favorite";
+        // let favRegex = /favou?rite/;
+        // let result = favRegex.test(A); ->true
+        // let result = favRegex.test(B); ->true
+        // (tương tự trên)
+
+        // let A = "quuuuu";
+        // let qu= /q(?=u)/;     A.match(qu); -> Array(1) [0: 'q']
+        // let qt = /q(?!u)/;    A.match(qt); -> null
+        // (Nếu qu giống như chuỗi A không, nếu có trả về q, còn không thì null )
+
+        // let password = "abc123";
+        // let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+        // checkPass.test(password);
+        // (Đây là một trình kiểm tra mật khẩu đơn giản (nguyên bản) tìm kiếm từ 3 đến 6 ký tự và ít nhất một số)
+
+        // let sampleWord = "astronaut";
+        // let pwRegex = /^\D(?=\w{4,})(?=\w*\d{2}\w*)/; 
+        // let result = pwRegex.test(sampleWord);
+        // (đối sánh mật khẩu dài hơn 5 ký tự và có hai chữ số liên tiếp)
+
+        // let repeatStr = "row row row your boat";
+        // let repeatRegex = /(\w+) \1 \1/;
+        // repeatStr.match(repeatRegex); ->Array(2) [0: 'row row row', 1: 'row']
+        // (Việc sử dụng .match()phương thức trên một chuỗi sẽ trả về một mảng có chuỗi con phù hợp, cùng với các nhóm được bắt của nó)
+      
+        // let repeatNum = "42 42 42";
+        // let reRegex = /^(\d+)\s\1\s\1$/;
+        // let result = repeatNum.match(reRegex);->Array(2) [0: '42 42 42', 1: '42']
+
+        // let wrongText = "The sky is silver.";
+        // let silverRegex = /silver/;
+        // wrongText.replace(silverRegex, "blue"); -> The sky is blue\
+
+        // let str = "one two three";
+        // let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+        // let replaceText = "$3 $2 $1"; 
+        // let result = str.replace(fixRegex, replaceText); -> three two one
+
+        // let hello = "   Hello, World!  ";
+        // let wsRegex = /^(\s*)(\S+\s\S+)(\s*)$/;
+        // let result = hello.replace(wsRegex,"$2"); -> ["Hello, World!"]
+        // (Xóa khoảng trắng)
+
+            // var date = new Date();
+            // console.log(date.getFullYear()+'/'+ (date.getMonth()+1) +'/'+date.getDate()+'  '+ 
+            // date.getHours()+':'+date.getMinutes()+':'+date.getSeconds());
+
+
+
+        //     var numbers = [];
+
+        //     for (var i = 0; i < 4; i++)
+        //     {
+        //         numbers[i] = [];
+        //         for (var j = 0; j < 5; j++)
+        //         {
+        //            numbers[i][j] = Math.floor((Math.random() * 10) + 1);
+        //         }
+        //     }
+ 
+        // console.log(numbers);
+        
+    function getRequestBodyFromValues(formValues) 
+    {
+        var user = {};
+       for(let i = 0; i <  formValues.length ; i++)
+        {
+            user[formValues[i].field] = formValues[i].value;
+        }
+        return user;
+    }
+    console.log([
+    { field: 'name', value: 'Sơn Đặng' },
+    { field: 'age', value: 18 },
+    { field: 'address', value: 'Hà Nội' },
+    // ...
+]);
+
+
+ </script>
+</body>
+</html>

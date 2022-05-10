@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script&display=swap');
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main
+{
+    max-width: 1280px;
+    max-height: 100%;
+    margin: 30px auto;
+    padding:15px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+#main>p
+{
+    text-align: center;
+}
+#title{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;;
+}
+#img-caption
+{
+    font-size: 16px;
+    text-align: center;
+}
+#img-div
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding:15px;
+    background-color: #ffffff;
+}
+#image
+{
+    display: block;
+    max-width: 100%;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#tribute-info
+{
+    max-width: 600px;
+    margin:0 auto;
+}
+#tribute-info >h3
+{
+    text-align: center;
+
+}
+#tribute-info> ul li
+{
+    margin:1rem 0;
+    line-height: 30px;
+
+}
+#image-info> ul
+{
+    margin:1rem 0;
+}
+.space
+{
+    margin-top: 3rem;
+}
+h5{
+    text-align: center;
+    font-size: 18px;
+}

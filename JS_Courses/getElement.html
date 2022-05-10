@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        Text 1
+        <h1>Học JS tại F8</h1>
+        Text 2
+    </div>
+    <script>
+    var textNode1 = document.querySelector('div').firstChild
+    var textNode2 = document.querySelector('div').lastChild
+    var h1Element = document.querySelector('div').firstElementChild
+    console.log(textNode1.textContent);
+    console.log(textNode2.textContent);
+    console.log(h1Element.textContent);
+    </script> 
+</body>
+</html>

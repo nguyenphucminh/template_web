@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div type="checkbox" value="1" name="answer"></div>
+    <input type="checkbox" value="1" name="answer" />
+    <input type="checkbox" value="2" name="answer" checked />
+    <input type="checkbox" value="3" name="answer" disabled />
+    <input type="checkbox" value="4" name="answer" checked disabled />
+
+    <script>
+    var checkboxNodes = document.querySelectorAll('input');
+    var checkbox1Element = document.querySelector('input[type="checkbox"][value="1"]');
+    var checkboxCheckedAndNotDisabled = document.querySelector('input[checked]:not([disabled])');
+    var checkboxDisabledAndNotChecked = document.querySelector('input[disabled]:not([checked]');
+    var checkboxCheckedAndDisabled = document.querySelector('input[disabled][checked]');
+
+    console.log(checkboxNodes);
+    console.log(checkbox1Element);
+    console.log(checkboxCheckedAndNotDisabled);
+    console.log(checkboxDisabledAndNotChecked);
+    console.log(checkboxCheckedAndDisabled);
+    </script>
+</body>
+</html>

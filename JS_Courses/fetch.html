@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li></li>
+    </ul>
+    <script>
+        function renderCourses(courses) {
+  var listCoursesBlock = document.querySelector("#list-courses");
+  var htmls = courses.map(function (course) {
+    return `
+      <li class="course-item-${course.id}">
+        <h4>${course.name}</h4>
+        <p>${course.description}</p>
+        <button onclick="handleDeleteCourse(${course.id})">Xoa</button>
+        <button onclick='renderEditBtn(${course.id})'>Thay Doi</button>
+        </li>
+    `;
+  });
+  listCourses.innerHTML = htmls.join("");
+}
+
+function editCourse(id, formdata, callback) {
+  options = {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(formdata)
+  };
+  fetch(coursesAPI + "/" + id, options)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(callback)
+
+}
+function renderEditBtn(id) {
+  var nameEditBtn = document.querySelector(`.course-item-${id} h4`).innerHTML;
+  var descEditBtn = document.querySelector(`.course-item-${id} p`).innerHTML;
+
+  // console.log(descEditBtn.innerHTML);
+  document.querySelector('input[name="name"]').value = nameEditBtn;
+  document.querySelector('input[name="description"]').value = descEditBtn;
+  var createBtn = document.querySelector("#createBtn");
+  if (createBtn.innerText == "Submit") {
+    createBtn.innerText = "Modify";
+    createBtn.onclick = function(){
+      var name = document.querySelector('input[name="name"]').value;
+      var description = document.querySelector('input[name="description"]').value;
+      var formData = {
+        name: name,
+        description: description,
+      };
+      editCourse(id, formData, function () {
+        getCourses(renderCourses);
+      });
+    }
+  } 
+
+};
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Các thông số còn lại cú pháp cho phép một chức năng để 
+    chấp nhận một số lượng không xác định các đối số là một mảng, 
+    cung cấp một cách để đại diện các chức năng khác nhau trong JS -->
+    <script>
+        function howMany(...args) 
+        {
+            return "You have passed " + args.length + " arguments.";
+        }
+        console.log(howMany(0, 1, 2));
+        console.log(howMany("string", null, [1, 2, 3], { }));
+    </script>
+</body>
+</html>

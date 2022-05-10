@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="parent">
+        <li>"Cày" JS DOM tại F8</li>
+        <li>"Cày" JS DOM tại F8</li>
+    
+        <ul>
+            <li>"Cày" JS DOM tại F8</li>
+            <li>"Cày" JS DOM tại F8</li>
+    
+            <ul>
+                <li>"Cày" JS DOM tại F8</li>
+                <li>"Cày" JS DOM tại F8</li>
+            </ul>
+        </ul>
+    </ul>
+    <script>
+var listItems1 = document.querySelectorAll(".parent > li");
+var listItems2 = document.querySelectorAll(".parent > ul > li");
+var listItems3 = document.querySelectorAll(".parent > li, .parent > ul > li, .parent > ul > ul > li");
+console.log(listItems1)
+console.log(listItems2)
+console.log(listItems3)
+    </script>
+</body>
+</html>

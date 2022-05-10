@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Promise Hell
+function cookingRice(ms) {
+    return new Promise(function(resolve, reject) {
+        setTimeout(resolve, ms);
+    })
+}
+cookingRice(1000)
+    .then(function () {
+        console.log('Cho gạo vào nồi');
+        return cookingRice(5000);//return promise
+    })
+    //Nếu thằng then đầu tiên nó return ra một promise thì 
+    //thằng then liền kề sẽ phải chờ thằng đầu tiên chạy xong rồi chạy tiếp 
+    
+    .then(function () {//then liền kề
+        console.log('Vo gạo');
+        return cookingRice(0);
+    })
+    .then(function () {
+        console.log('Cắm Điện');
+        return cookingRice(3000);
+    })
+    .then(function () {
+        console.log('Bật nút');
+        return cookingRice(0);
+    })
+    .catch(function () {
+        console.log('Cơm sống');
+    })
+    .finally(function () {
+        console.log('Cơm chín');
+    })
+    </script>
+</body>
+</html>

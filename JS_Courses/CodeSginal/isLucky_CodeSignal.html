@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(n) 
+{
+    var numbers=n.toString().split("");
+    var a=0,b=0;
+    for(i=0;i<numbers.length/2;i++){
+        a+=parseInt(numbers[i],10);
+        b+=parseInt(numbers[numbers.length/2+i],10);
+    }
+    return a===b;
+}
+console.log(solution(219222));
+    </script>
+</body>
+</html>

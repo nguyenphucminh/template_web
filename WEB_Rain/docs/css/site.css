@@ -1,0 +1,10 @@
+.jumbotron {
+  padding: 120px 25px;
+  text-align: center;
+  background-image: url('./../img/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  color: #fff;
+  text-shadow: 0 1px 3px #000;
+}

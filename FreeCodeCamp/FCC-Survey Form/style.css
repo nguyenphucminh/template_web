@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/1445416/pexels-photo-1445416.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+}
+.main::after{
+    content: "";
+    background-image: rgb(0,0,0,0.8);
+    background-size: cover;
+    background-position: center;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main>p
+{
+    text-align: center;
+    font-size: 25px;
+    z-index: 2;
+    position: relative;
+    font-weight: 100; 
+}
+#title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: yellow;
+    font-family: 'Gochi Hand', cursive;
+    text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 25px yellow, 0 0 35px orange, 0 0 45px orange;
+    animation: blink 5s ease-in-out infinite;
+  }
+  
+  @keyframes blink {
+    15%, 25%, 60% {
+      text-shadow: none;
+      opacity: 0.2;
+    }
+    0%, 10%, 18%, 28%, 35%, 40%, 70%, 80%, 100% {
+      text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 25px yellow, 0 0 35px orange, 0 0 45px orange;
+      opacity: 1;
+    }
+  }
+
+
+#description
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color:black;
+    font-family: 'Oleo Script', cursive;
+}
+
+.main-content
+{
+    background-image: rgba(27, 27, 50, .9);
+    max-width: 25rem;
+    text-decoration: column;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shadow:2px 2px 15px white ;
+}
+@media only screen and (max-width: 600px) {
+  .main-content {
+    margin: 0 1rem;
+  }
+}
+
+#name,#email,#number,#comment
+{
+    display:block;
+    width: -webkit-fill-available;
+    height: 25px;
+    padding:5px 0;
+    color:#000000;
+    border:1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+
+}
+#dropdown
+{
+  display:block;
+  width: 100%;
+  height: 2.3rem;
+  padding:5px 0;
+  color:#000000;
+  border:1px solid #eeeeee;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+}
+label[for=name],
+label[for=email],
+label[for=number],
+label[for=dropdown]
+{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+/*Submit------------------------------------------------------------------------------------------------ */
+#submit {
+    position: relative;
+    margin-top: 70px;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 30px;
+    background-color: transparent;
+    border: 0 solid white;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: 2px 2px 15px white;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  #submit::before {
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+    opacity: 0.2;
+  }
+  
+  #submit::after {
+    position: absolute;
+    border-radius: 20px;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: 0.5s 0.5s ease-in-out;
+    background-color: white;
+    opacity: 1;
+  }
+
+  #submit:hover::before, #submit:hover::after {
+    width: 100%;
+  }
+  
+  #submit:hover {
+    color: black;
+  }
+  
+  span {
+    position: relative;
+    z-index: 10;
+  }
+/*Radio------------------------------------------------------------------------------------------------ */
+  fieldset 
+  {
+    margin-bottom: 1rem ;
+    padding-bottom: 10px;
+  }
+  fieldset >legend
+  {
+    font-size: 1rem;
+  }
+
+input[type=radio] {
+    margin: 0 auto;
+    margin-left: 1rem;
+    height: 1rem;
+    width: 20px
+;
+}
+label[for=elementary],
+label[for=intermediate],
+label[for=upper-intermediate],
+label[for=advanced]
+{
+  font-size: 1rem;
+}
+/*Checkbox------------------------------------------------------------------------------------------------ */
+.checkbox-skills
+{
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+.p-checkbox
+{
+  font-size: 1rem;
+}
+input[type=checkbox] {
+  height: 18px;
+  width: 20px
+;
+}
+label[for=listening],
+label[for=speaking],
+label[for=reading],
+label[for=writing]
+{
+margin: 0 auto;
+font-size: 1rem;
+}
+
+/*Comment------------------------------------------------------------------------------------------------ */
+label[for=comment]
+{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+#comment
+{
+    min-height: 100px;
+}

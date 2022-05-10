@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">PhucMinh survey form</h1>
+        <p id="description">Thank you for taking the time to complete this form</p>
+    
+        <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form">
+                     <label for="name" id="name-lable">Name: </label>
+                     <input type="text" id="name" required placeholder="Enter your name">
+    
+                     <label for="email" id="name-lable">Email: </label>
+                     <input type="text" id="email" required placeholder="Enter your email">
+    
+                     <label for="number" id="number-lable">Age: </label>
+                     <input type="number" id="number" min="16" max="60" required placeholder="Age"> 
+    
+    
+                     <label for="dropdown">Which language are you most fluent in?</label>
+                     <select id="dropdown">
+                         <option value="english">English</option>
+                         <option value="korean">Korean</option>
+                         <option value="chinese">Chinese</option>
+                         <option value="japanese">Japanese</option>
+                         <option value="spanish">Spanish</option>
+                         <option value="german">German</option>
+                         <option value="indonesian">Indonesian</option>
+                         <option value="thai">Thai</option>
+                         <option value="vietnamese">Vietnamese</option>
+                         <option value="other">Other</option>
+                     </select>
+    
+                    
+                     <fieldset>
+                         <legend>Proficiency level</legend>
+                         <input type="radio" name="action" checked id="elementary" value="elementary">
+                         <label for="elementary">Elementary (A2)</label><br>
+    
+                         <input type="radio" name="action" checked id="intermediate" value="intermediate">
+                         <label for="intermediate">Intermediate (B1)</label><br>
+    
+                         <input type="radio" name="action" checked id="upper-intermediate" value="upper-intermediate">
+                         <label for="upper-intermediate">Upper Intermediate (B2)</label><br>
+    
+                         <input type="radio" name="action" checked id="advanced" value="advanced">
+                         <label for="advanced">Advanced (C1)</label><br>
+    
+                     </fieldset>
+    
+                     <p class="p-checkbox">What would you like to see improved?</p>
+                     <div class="checkbox-skills">
+                        <input type="checkbox" name="listening" id="listening" value="listening">
+                        <label for="listening">Listening</label><br>
+       
+                        <input type="checkbox" name="speaking"  id="speaking" value="speaking">
+                        <label for="speaking">Speaking</label><br>
+       
+                        <input type="checkbox" name="reading"  id="reading" value="reading">
+                        <label for="reading">Reading</label><br>
+       
+                        <input type="checkbox" name="writing"  id="writing"  value="writing">
+                        <label for="writing">Writing</label><br>
+                     </div>
+
+    
+    
+                     <label for="comment">Any comments or suggestions?</label>
+                     <textarea id="comment" cols="50" rows="4">Enter your comment here...</textarea>
+                     
+                    <button id="submit">
+                     <span>Submit</span>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

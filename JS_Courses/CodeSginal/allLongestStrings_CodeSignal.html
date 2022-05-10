@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var inputArray = ["aba", "aa", "ad", "vcd", "aba"];
+
+    function allLongestStrings(inputArray)
+    {
+    var newarr = [];
+
+    if( inputArray.length == 1)
+    {
+      return inputArray;
+    }
+
+    var longestWord = inputArray.sort(function(a, b) { return b.length - a.length;});
+
+    var lengthOfLongestWord = longestWord[0].length;
+
+
+    for(var i = 0; i < longestWord.length; i++)
+    {
+        if(longestWord[i].length == lengthOfLongestWord)
+        {
+            newarr.push(longestWord[i]);
+        }
+    }
+
+    return newarr;
+    }
+    console.log(allLongestStrings(inputArray));
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <ul>
+                <li class="item">F8 lý thuyết</li>
+                <li class="item">F8 bài tập</li>
+                <li class="item">F8 thực hành</li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul>
+                <li class="item">Kiền trì</li>
+                <li class="item">Học mỗi ngày</li>
+                <li class="item">Tin vào bản thân</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+    var boxHTMLCollection = document.getElementsByClassName('box');
+    console.log(boxHTMLCollection);
+
+    var box1Element = document.querySelector('.container .box:first-child');
+    console.log(box1Element);
+
+    var box2Element = document.querySelector('.container .box:nth-child(2)');
+    console.log(box2Element);
+
+    var allItemElements = document.getElementsByTagName('li');
+    console.log(allItemElements);
+
+    var box1ItemElements = document.querySelectorAll('.box:nth-child(1) li');
+    console.log(box1ItemElements);
+    
+    var box2ItemElements = document.querySelectorAll('.box:nth-child(2) li');
+    console.log(box2ItemElements);
+    </script>
+</body>
+</html>

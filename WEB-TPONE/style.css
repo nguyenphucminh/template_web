@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Pen+Script&family=Oleo+Script:wght@400;700&family=Oswald:wght@600&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+}
+/* NavigationBar */
+.logo
+{
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+}   
+
+#nav-bar
+{
+    position: sticky;
+    top:0;
+    z-index:10; 
+    background-color: white;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float:right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    color:#007bff !important;
+}
+.navbar-toggler
+{
+    border: none !important;
+}
+.nav-link
+{
+    color:#555 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.dropdown-menu li a
+{
+    color: black !important;
+}
+
+/* Slider */
+#slider
+{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+
+}
+.carousel-caption h5
+{
+    color:white;
+    font-size: 35px;
+    font-weight: 600;
+}
+ 
+/* About */
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn 
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Services */
+#services  
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/banner/banner_ser.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+#services h1
+{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+
+}
+#services h1::after
+{
+    content: "";
+    background: #efefef;
+    display:block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin:20px auto;
+    padding: 7px;
+    height:80px;
+    width:80px; 
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#services p
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-3:hover
+{
+    background: #007bff;
+    cursor: pointer;
+    transition: 1.5s;
+}
+/* Project */
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project img {
+    transition: all 0.4s ease;   
+}
+
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+/* Hero */
+.hero {
+    margin: 80px 0 20px 0;
+    background-image: url(img/medical/med4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding:100px;
+    text-align: center;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+/* Team Members */
+#team
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+h1
+{
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 20px;
+}
+h2::after
+{
+    content: "";
+    background: #007bff;
+    display:block;
+    height: 3px;
+    width: 170px;
+    margin:10px auto 5px;
+}
+
+.profile-pic .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img
+{
+    filter: grayscale(1);
+}
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h2
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+.profile-pic h3
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+#team .fab
+{
+    height: 30px;
+    width: 30px;
+    color: #007bff !important;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box ul
+{   
+    padding:10px 0;
+    position: absolute;
+    z-index: 2;
+    bottom:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li
+{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul
+{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li
+{
+    transition: 0.5s;
+}
+/* Promo */
+#promo
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/banner/banner_qc.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff ;
+    background-attachment: fixed;
+    padding:100px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+/* Price Plans */
+#price
+{
+    padding: 40px 0;
+    background: #efefef;
+}
+.single-price
+{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background: #fff;
+    transition:0.5s;
+}
+.single-price:hover
+{
+    box-shadow: 0 2px 20px #333;
+}
+.price-head
+{
+    background: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+.price-head h2 
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase; 
+}
+.price-head > h3
+{
+    text-align: center;
+    color: darkslategray !important;
+    padding-bottom: 20px;
+    font-weight: bold !important;
+}
+.price-head > h3::after
+{
+    content: "";
+    background: #007bff;
+    display:block;
+    height: 3px;
+    width: 170px;
+    margin:10px auto 5px;
+}
+.price-head p
+{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+} 
+#price span
+{
+    font-size: 15px;
+}
+.price-content
+{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+.price-content ul li 
+{
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+.price-content ul li:nth-child(5)
+{
+    border-bottom: none;
+}
+.fa-check-circle
+{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-times-circle
+{
+    color:red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.price-button
+{
+    display: inline;
+    float: left;
+    padding:15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+.buy-btn
+{
+    background: #2196f3;
+    border-radius: 3px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 50px;
+    transition: 0.5s;
+}
+.buy-btn:hover
+{
+    border-color: 1px solid #fff;
+    background: #3f51b5;
+}
+a
+{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+/* Testimonials*/
+#testimonials
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/medical/A.jpg);
+}
+#testimonials p
+{
+    color:#ccc;
+    font-size: 20px;
+}
+
+#testimonials .row
+{
+    margin-top: 80px;
+}
+.col-md-4
+{
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile
+{
+    padding: 70px 10px 10px;
+    background: #efefef;
+    height: 320px;
+    width: 410px;
+}
+.user
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img
+{
+    top: -120px;
+    position: relative;
+    border: 10px solid #fff;
+}
+.profile h3
+{
+    font-size: 20px;
+    margin-top: -100px;
+    color: #007bff;
+}
+.text-center
+{
+    margin-bottom: 3.5rem;
+}
+#testimonials span
+{
+    font-size: 15px;
+    color:#333;
+}
+blockquote
+{
+    font-size: 15px;
+    line-height: 30px;
+    position: relative;
+    top:-100px;
+}
+blockquote::before
+{
+    content:'\201C';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right:5px;
+
+}
+blockquote::after
+{
+    content:'\201E';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 2px;
+    bottom: 10px;
+    left:5px;
+    
+}
+.profile:hover
+{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* Get in Touch */
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+.contact-form
+{
+    padding: 15px;
+}
+.form-group
+{
+    margin:10px;
+}
+.contact-form button
+{
+    margin-left: 10px;
+}
+.form-control
+{
+    border-radius: 0 !important;
+    border: none !important;
+}
+::placeholder
+{
+    color: #999 !important;
+}
+.follow
+{
+    background: #fff;
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+    top: 15px;
+}       
+
+.contact-info .fab
+{
+    font-size: 25px;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px;
+}
+/* Footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+.footer-distributed{
+
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/medical/med6.jpg) ;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.ul_footer
+{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+.ul_footer > li 
+{
+    font-weight: 400;
+    
+}
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 50%;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+}
