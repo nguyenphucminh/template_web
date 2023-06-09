@@ -18,11 +18,15 @@
     }
 
     // Regular
-      console.log("hello");                                  
+      console.log("hello");     
+    // clearing
+      console.clear();
+                             
     // Interpolated
       console.log(`hello : ${dogs[1].name}`);
     // Styled
-      console.log('%c nguyen huu nghia','font-size:40px;background:red;')
+    //%c được sử dụng để áp dụng một kiểu định dạng CSS cho phần văn bản được in ra trong bảng điều khiển (console).
+      console.log('%c nguyen phuc minh','font-size:40px;background:red;')
     // warning!
       console.warn('warning!');
     // Error :|
@@ -30,11 +34,14 @@
     // Info
       console.info('information!');
     // Testing
+    //console.assert() được sử dụng để kiểm tra một biểu thức điều kiện và in ra một thông báo lỗi nếu biểu thức không đúng.
+    //Trong trường hợp này, nếu p không chứa lớp CSS "ouch"
+    // điều kiện không đúng và thông báo lỗi 
       const p = document.querySelector('p');
       console.assert(p.classList.contains('ouch'),'that is wrong!');
-    // clearing
-      console.clear();
-    // Viewing DOM Elements
+    
+    
+      // Viewing DOM Elements
       console.log(p);
       console.dir(p);
     // Grouping together
@@ -46,13 +53,13 @@
 
       });
     // counting
-      console.count('nghia');
-      console.count('nghia');
-      console.count('nghia');
-      console.count('nghia');
+      console.count('minh');
+      console.count('minh');
+      console.count('minh');
+      console.count('minh');
 
       console.count('A');
-      console.count('nghia');
+      console.count('minh');
       console.count('A');  
     // timing
       console.time('fetching data'); //same
@@ -63,6 +70,7 @@
       });
 
       console.table(dogs);
+      console.log(console)
 
   </script>
 </body>
