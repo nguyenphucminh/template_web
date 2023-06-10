@@ -1,0 +1,1157 @@
+
+  <html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="generator" content="Aspose.Words for .NET 22.7.0" />
+    <title></title>
+    <style>
+        @media print {
+
+            body,
+            page {
+                box-shadow: 0;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 10mm 5mm 10mm 15mm;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Times New Roman'; font-size: 14pt;">
+    <div style="
+    page-break-before: always; page-break-after: always
+">
+<div style="-aw-headerfooter-type: header-primary; clear: both">
+<p style="margin-top: 0pt; margin-bottom: 0pt">
+    <span style="-aw-import: ignore">&#xa0;</span>
+</p>
+</div>
+<p style="margin-top: 0pt; margin-bottom: 0pt; line-height: 150%; text-align: center">
+<span style="font-weight: bold">KHÁM SỨC KHỎE ĐỊNH KỲ</span><span
+    style="font-weight: bold; -aw-import: spaces">&#xa0;
+</span>
+</p>
+<div style="margin-top: 0pt; margin-bottom: 0pt; line-height: 150%; text-align: center; display:flex; flex-direction: column">
+<span style="font-weight: bold">I. TIỀN SỬ BỆNH, TẬT</span>
+<span style="font-style: italic">(Bác sỹ khám sức khỏe hỏi và ghi chép)</span><span
+</span>
+</div>
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; line-height: 150%;">
+<span style="line-break: ${khamBenh?.TienSuBenh ? 'auto' : 'anywhere'};">
+    &nbsp;${khamBenh?.TienSuBenh || '.'.repeat(299)}
+</span>
+</p>
+<div>
+    <span style="font-weight: bold;">Tiền sử sản phụ khoa <span style="font-weight: 400;">(Đối với nữ):</span> </span>
+</div>
+<div>
+    <span>- Bắt đầu thấy kinh nguyệt năm bao nhiêu stuổi:
+            <span style="    
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            font-size: 12pt;
+            line-height: 30px;
+            border: 1px solid #000;
+            padding: 0 5px;">1</span>            <span style="    
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            font-size: 12pt;
+            line-height: 30px;
+            border: 1px solid #000;
+            padding: 0 5px;">1</span>
+    </span>
+</div>
+<div>
+    <span>- Tính chất kinh nguyệt:
+        <span>☐&#xa0;Đều</span>
+        <span style="padding-left: 115px;">☐&#xa0;Không đều</span>
+    </span>
+</div>
+<div style="padding-left: 60px;">
+    <span>Chu kỳ kinh: 
+        <span style="padding-left: 22px;">☐☐ ngày</span>
+        <span style="padding-left: 95px;">Lượng kinh: ☐☐ ngày</span>
+    </span>
+</div>
+<div style="padding-left: 60px;">
+    <span>Đau bụng kinh: 
+        <span style="padding-left: 3px;">☐ Có</span>
+        <span style="padding-left: 123px;">☐ Không</span>
+    </span>
+</div>
+<div>
+    <span>- Đã lập gia đình:
+        <span style="padding-left: 48px;">☐&#xa0;Có</span>
+        <span style="padding-left: 123px;">☐&#xa0;Chưa</span>
+    </span>
+</div>
+<div>
+    <span>- PARA:
+        <span>☐☐☐☐</span>
+    </span>
+</div>
+<div>
+    <span>- Số lần mổ sản, phụ khoa:
+        <span>Có ☐☐ <span style="font-style: italic">Ghi rõ:</span> .............................. Chưa ☐</span>
+    </span>
+</div>
+<div style="margin-top: 10px">
+    <span>- Có đang áp dụng BPTT không?
+        <span>Có ☐ <span style="font-style: italic">Ghi rõ:</span> .............................. Không ☐</span>
+    </span>
+</div>
+<p style="margin-top: 0pt; margin-bottom: 0pt; line-height: 150%; text-align: center">
+<span style="font-weight: bold">II. KHÁM THỂ LỰC</span><span
+    style="font-weight: bold; -aw-import: spaces">&#xa0;
+</span>
+</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; padding:0 30px; line-height: 150%">
+<span>Chiều cao:</span><span>&#xa0;</span><span>&#xa0;</span><span>${
+    khamBenh?.SinhHieu?.ChieuCao || '..................'
+    }cm;</span><span style="-aw-import: spaces">&#xa0;&#xa0; </span><span>Cân
+    nặng:</span><span>&#xa0;</span><span>${
+    khamBenh?.SinhHieu?.CanNang || '....................'
+    }Kg;</span><span>&#xa0;</span><span>&#xa0;</span><span>&#xa0;</span><span>Chỉ số
+    BMI:</span><span>&#xa0;</span><span>${
+    BMI?.bmi || '....................'
+    }</span>
+</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; padding:0 30px;line-height: 150%">
+<span>Mạch: ${
+    khamBenh?.SinhHieu?.Mach ||
+    '..................................'
+    } lần/phút;</span><span style="-aw-import: spaces">&#xa0;&#xa0; </span><span>Huyết áp: ${
+    khamBenh?.SinhHieu?.HuyetApCao || '..................'
+    } / ${
+    khamBenh?.SinhHieu?.HuyetApThap || '.....................'
+    }
+    mmHg</span><span>&#xa0;</span><span>&#xa0;</span>
+</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; padding:0 30px;line-height: 150%">
+<span style="line-break: ${
+      khamBenh?.PhanLoaiTheLuc ? 'auto' : 'anywhere'
+    };">
+    <span>Phân loại thể lực: </span>
+    &nbsp;${
+    renderTheLuc(khamBenh?.PhanLoaiTheLuc) || '.'.repeat(96)
+    }
+</span>
+</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt;  text-align: center">
+<span style="font-weight: bold">II. KHÁM LÂM SÀNG </span>
+</p>
+<table cellspacing="0" cellpadding="0" style="
+        width: 520.65pt;
+        border-spacing: -1px;
+    ">
+
+    
+    <tr style="height: 40pt">
+        <td style="
+            width: 403.2pt;
+            border-top: 0.75px solid;
+            border-left: 0.75px solid;
+            border-bottom: 0.75px solid;
+            padding-right: 5.03pt;
+            padding-left: 5.03pt;
+            vertical-align: center;
+                ">
+            <p style="
+                        margin-top: 0pt;
+                        margin-bottom: 0pt;
+                        text-align: center;
+                        font-size: 12pt;
+                    ">
+                <span style="font-weight: bold">Nội dung khám</span>
+            </p>
+        </td>
+        <td style="
+                    width: 122.1pt;
+                    padding-right: 5.03pt;
+                    padding-left: 5.03pt;
+                    vertical-align: bottom;
+                    border-top: 0.75px solid;
+                    border-right: 0.75px solid;
+                    border-left: 0.75px solid;
+                    border-bottom: 0.75px solid;
+                ">
+            <p style="
+                        margin-top: 0pt;
+                        margin-bottom: 0pt;
+                        text-align: center;
+                        font-size: 12pt;
+                    ">
+                <span style="font-weight: bold">Họ tên, chữ ký của Bác sỹ</span>
+            </p>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan='2' style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+            <div style="width: 300px; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;">1.</divs>
+            </div>
+            <div >Nội khoa</div>            
+        </td>
+    </tr>
+
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">a&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic; line-break: ${
+                  BatThuong?.TuanHoan ? 'auto' : 'anywhere'
+                  };">Tuần hoàn: &nbsp;<span style="font-style: normal;">${BatThuong?.TuanHoan || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                  PhanLoai?.TuanHoan ? 'auto' : 'anywhere'
+                  };">Phân loại:&nbsp;${PhanLoai?.TuanHoan || ''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">b&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                  BatThuong?.HoHap ? 'auto' : 'anywhere'
+                };">Hô hấp: &nbsp;<span style="font-style: normal;">${BatThuong?.HoHap || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                  PhanLoai?.HoHap ? 'auto' : 'anywhere'
+              };">Phân loại: &nbsp;${PhanLoai?.HoHap || ''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">c&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                  BatThuong?.TieuHoa ? 'auto' : 'anywhere'
+                };">Tiêu hóa:&nbsp;<span style="font-style: normal;">${BatThuong?.TieuHoa || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                  PhanLoai?.TieuHoa ? 'auto' : 'anywhere'
+                };">Phân loại:&nbsp;${PhanLoai?.TieuHoa ||''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">d&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                  BatThuong?.ThanTietNieu ? 'auto' : 'anywhere'
+                };">Thận-Tiết niệu: &nbsp;<span style="font-style: normal;">${BatThuong?.ThanTietNieu || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                  PhanLoai?.ThanTietNieu ? 'auto' : 'anywhere'
+                };">Phân loại:&nbsp;${PhanLoai?.ThanTietNieu || ''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">đ&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                  BatThuong?.NoiTiet ? 'auto' : 'anywhere'
+                };">Nội tiết: &nbsp;<span style="font-style: normal;">${BatThuong?.NoiTiet || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${PhanLoai?.NoiTiet ? 'auto' : 'anywhere'};">
+                Phân loại:&nbsp;${PhanLoai?.NoiTiet ||''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">e&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                  BatThuong?.CoXuongKhop ? 'auto' : 'anywhere'
+                };">Cơ - xương - khớp:&nbsp;<span style="font-style: normal;">${BatThuong?.CoXuongKhop || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                  PhanLoai?.CoXuongKhop ? 'auto' : 'anywhere'
+                };">Phân loại:&nbsp;${PhanLoai?.CoXuongKhop || ''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">g&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                  BatThuong?.ThanKinh ? 'auto' : 'anywhere'
+                };">Thần kinh: &nbsp;<span style="font-style: normal;">${BatThuong?.ThanKinh || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                  PhanLoai?.ThanKinh ? 'auto' : 'anywhere'
+                };">Phân loại:&nbsp;${PhanLoai?.ThanKinh || ''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+    <tr>
+        <td style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            ">
+            <div style="width: 100%; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;flex-shrink: 0;padding-top: 2px;">h&rpar;</divs>
+            </div>
+            <div style="width:100%; display:flex; flex-direction: column;text-align: start;">
+                <div style="border-bottom: 0.75px solid; padding-top: 2px; font-style: italic;line-break: ${
+                BatThuong?.TamThan ? 'auto' : 'anywhere'
+              };">Tâm thần:&nbsp;<span style="font-style: normal;">${BatThuong?.TamThan || 'Chưa phát hiện bệnh lí'}</span></div>
+                <div style="padding-top: 2px;line-break: ${
+                PhanLoai?.TamThan ? 'auto' : 'anywhere'
+              };">Phân loại:&nbsp;${PhanLoai?.TamThan || ''}</div>
+            </div>            
+        </td>
+        <td style="
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan='2' style="
+            border-top: 0.75px solid;
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+            <div style="width: 300px; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;">2.</divs>
+            </div>
+            <div >Mắt</div>            
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        width: 403.2pt;
+        vertical-align: top;
+        padding-top: 2px;
+        border-left: 0.75px solid;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+            
+            
+            <p style="
+                margin-top: 0pt;
+                margin-bottom: 0pt;
+                line-height: 150%;
+                font-size: 12pt;
+            ">
+                <span style="font-style: italic">Kết quả khám thị lực: <span style="font-style: normal">&#xa0;&#xa0;Không kính:</span></span><span style="-aw-import: spaces;">&#xa0;</span>
+                <span>Mắt phải:${
+                    khamBenh?.Mat?.KhongKinhPhai ? `${khamBenh?.Mat?.KhongKinhPhai}/10` : 
+                    '.........'
+                    }</span><span style="-aw-import: spaces">&#xa0; </span><span>Mắt trái: ${
+                    khamBenh?.Mat?.KhongKinhTrai ? `${khamBenh?.Mat?.KhongKinhTrai}/10` : 
+                    '............'
+                    }</span>
+            </p>
+            <p style="
+                margin-top: 0pt;
+                margin-bottom: 0pt;
+                line-height: 150%;
+                font-size: 12pt;
+                border-bottom: 0.75px solid;
+            ">
+                <span
+                    style="-aw-import: spaces">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;
+                </span><span style="padding-left: 33px;">&#xa0;&#xa0;Có kính:</span><span>&#xa0;</span><span>&#xa0;</span><span>&#xa0;</span><span>&#xa0;</span><span>&#xa0;</span><span>&#xa0;</span><span>&#xa0;</span><span>
+                    Mắt phải:${
+                    khamBenh?.Mat?.CoKinhPhai ? `${khamBenh?.Mat?.CoKinhPhai}/10` :
+                    '.........'
+                    }</span><span style="-aw-import: spaces">&#xa0; </span><span>Mắt trái: ${
+                    khamBenh?.Mat?.CoKinhTrai ? `${khamBenh?.Mat?.CoKinhTrai}/10` :
+                    '............'
+                    }</span></span>
+            </p>
+            <p style="
+                margin-top: 0pt;
+                margin-bottom: 0pt;
+                line-height: 150%;
+                font-size: 12pt;
+                padding-top: 2px;
+                border-bottom: 0.75px solid;
+            ">
+                <span style="line-break: ${
+                                BatThuong?.Mat ? 'auto' : 'anywhere'
+                            };">
+                    <span style="font-style: italic;">Các bệnh về mắt (nếu có): </span>
+                    &nbsp;<span style="font-style: normal;">${
+                    BatThuong?.Mat || 'Chưa phát hiện bệnh lí'
+                    }</span>
+                </span>
+            </p>
+            <p style="
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            padding-top: 2px;
+        ">
+            <span style="line-break: ${
+                              PhanLoai?.Mat
+                                ? 'auto'
+                                : 'anywhere'
+                            };">
+                <span>Phân loại: </span>
+                &nbsp;${
+                PhanLoai?.Mat || ''
+                }
+            </span>
+        </p>
+        </td>
+        <td style="
+        width: 95.1pt;
+        padding-right: 5.03pt;
+        padding-left: 5.03pt;
+        vertical-align: top;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan='2' style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+            <div style="width: 300px; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;">3.</divs>
+            </div>
+            <div >Tai - Mũi - Họng</div>            
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        width: 403.2pt;
+        vertical-align: top;
+        border-left: 0.75px solid;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+            <p style="
+                margin-top: 0pt;
+                margin-bottom: 0pt;
+                line-height: 150%;
+                font-size: 12pt;
+                padding-top: 2px;
+            ">
+                <span style="font-style: italic">Kết quả khám thính lực: <span style="-aw-import: spaces">&#xa0;&#xa0;</span><span style="font-style: normal;">Tai trái:</span><span style="font-style: normal;">Nói thường:${
+                    khamBenh
+                    ?.TaiMuiHong
+                    ?.NoiThuongTrai ||
+                    '.........'
+                    }
+                    m;</span style="font-style: normal;"><span>&#xa0;</span><span style="font-style: normal;">Nói
+                    thầm: ${
+                    khamBenh
+                    ?.TaiMuiHong
+                    ?.NoiThamTrai ||
+                    '.........'
+                    } m</span>
+            </p>
+            <p style="
+                  margin-top: 0pt;
+                  margin-bottom: 0pt;
+                  line-height: 150%;
+                  font-size: 12pt;
+                  border-bottom: 0.75px solid;
+                  
+                ">
+                <span style="padding-left: 160px;">&#xa0;</span>  
+                <span>Tai phải:</span><span style="-aw-import: spaces"></span><span style="font-style: normal;">Nói thường:${
+                    khamBenh
+                    ?.TaiMuiHong
+                    ?.NoiThuongPhai ||
+                    '.........'
+                    }
+                    m;</span><span style="font-style: normal;"><span>&#xa0;</span>  
+                    Nói thầm: ${
+                    khamBenh
+                    ?.TaiMuiHong
+                    ?.NoiThamPhai ||
+                    '.........'
+                    } m</span>
+            </p>
+
+            <p style="
+                  margin-top: 0pt;
+                  margin-bottom: 0pt;
+                  line-height: 150%;
+                  font-size: 12pt;
+                  padding-top: 2px;
+                  border-bottom: 0.75px solid;
+                ">
+                <span style="line-break: ${
+                  BatThuong?.TaiMuiHong
+                  ? 'auto'
+                  : 'anywhere'
+                };">
+                    <span style="font-style: italic;">Các bệnh về tai mũi họng (nếu có): </span>
+                    &nbsp;${
+                    BatThuong?.TaiMuiHong ||
+                    'Chưa phát hiện bệnh lí'
+                    }
+                </span>
+            </p>
+            <p style="
+                  margin-top: 0pt;
+                  margin-bottom: 0pt;
+                  line-height: 150%;
+                  font-size: 12pt;
+                  padding-top: 2px;
+                ">
+                <span style="line-break: ${
+                  PhanLoai?.TaiMuiHong
+                  ? 'auto'
+                  : 'anywhere'
+                };">
+                    <span>Phân loại: </span>
+                    &nbsp;${
+                    PhanLoai?.TaiMuiHong || ""
+                    }
+                </span>
+            </p>
+        </td>
+        <td style="
+        width: 95.1pt;
+        padding-right: 5.03pt;
+        padding-left: 5.03pt;
+        vertical-align: top;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan='2' style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+            <div style="width: 300px; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;">4.</divs>
+            </div>
+            <div >Răng - Hàm - Mặt</div>            
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        width: 403.2pt;
+        vertical-align: top;
+        border-left: 0.75px solid;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+            <p style="
+                margin-top: 0pt;
+                margin-bottom: 0pt;
+                line-height: 150%;
+                font-size: 12pt;
+                border-bottom: 0.75px solid;
+                padding-top: 2px;
+            ">
+               <span style="line-break: ${
+                khamBenh
+                  ?.RangHamMat
+                  ?.HamTren
+                  ? 'auto'
+                  : 'anywhere'
+              };">
+                <span style="font-style: italic;">Kết quả khám:  &nbsp;<span style="font-style: normal;">Hàm trên:
+                &nbsp;${
+                khamBenh
+                ?.RangHamMat
+                ?.HamTren || '..................................'
+                }</span></span>
+            </span>           
+            <span style="line-break: ${
+                            khamBenh
+                            ?.RangHamMat
+                            ?.HamDuoi
+                            ? 'auto'
+                            : 'anywhere'
+                        };">
+                <span>Hàm dưới: </span>
+                <span style="font-style: normal;">&nbsp;${
+                khamBenh
+                ?.RangHamMat
+                ?.HamDuoi || '..................................'
+                }
+                </span>
+            </span>
+        </p>
+        <p style="
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 150%;
+        font-size: 12pt;
+        padding-top: 2px;
+        border-bottom: 0.75px solid;
+        ">
+            <span style="line-break: ${
+                        BatThuong?.RangHamMat
+                            ? 'auto'
+                            : 'anywhere'
+                        };">
+                <span style="font-style: italic;">Các bệnh về răng hàm mặt (nếu có):</span>
+                &nbsp;${
+                BatThuong?.RangHamMat ||
+                'Chưa phát hiện bệnh lí'
+                }
+            </span>
+        </p>
+        <p style="
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            padding-top: 2px;
+        ">
+            <span style="line-break: ${
+                PhanLoai?.RangHamMat
+                    ? 'auto'
+                    : 'anywhere'
+                };">
+                <span>Phân loại: </span>
+                &nbsp;${
+                PhanLoai?.RangHamMat ||
+                '.'.repeat(
+                96
+                )
+                }
+            </span>
+        </p>
+        </td>
+        <td style="
+        width: 95.1pt;
+        padding-right: 5.03pt;
+        padding-left: 5.03pt;
+        vertical-align: top;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+        </td>
+    </tr>
+
+
+    
+    <tr>
+        <td colspan='2' style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+            <div style="width: 300px; text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;">5.</divs>
+            </div>
+            <div >Da liễu</div>            
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        width: 400.2pt;
+        vertical-align: top;
+        border-left: 0.75px solid;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+            <p style="
+                margin-top: 0pt;
+                margin-bottom: 0pt;
+                line-height: 150%;
+                font-size: 12pt;
+                border-bottom: 0.75px solid;
+                padding-top: 2px;
+            ">
+               <span style="line-break: ${
+                khamBenh
+                  ?.RangHamMat
+                  ?.HamTren
+                  ? 'auto'
+                  : 'anywhere'
+              };">
+                <span style="font-style: italic;">Kết quả khám:  &nbsp;<span style="font-style: normal;">${BatThuong?.DaLieu || 'Chưa phát hiện bệnh lí'}</span></span>
+        </p>
+        <p style="
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            padding-top: 2px;
+        ">
+            <span style="line-break: ${
+                PhanLoai?.RangHamMat
+                    ? 'auto'
+                    : 'anywhere'
+                };">
+                <span>Phân loại: </span>
+                &nbsp;${PhanLoai?.DaLieu || '.'.repeat(96)}</span>
+        </p>
+        </td>
+        <td style="
+        width: 95.1pt;
+        padding-right: 5.03pt;
+        padding-left: 5.03pt;
+        vertical-align: top;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan='2' style="
+            border-left: 0.75px solid;
+            border-right: 0.75px solid;
+            border-bottom: 0.75px solid;
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            font-weight: bold;">
+            <div style="text-align: center; display: flex;">
+                <div style="border-right: 0.75px solid; width: 55px;">6.</divs>
+            </div>
+            <div style="font-weight: bold;">Phụ sản&nbsp;<span style="font-style: italic; font-weight: 400;">(Chi tiết nội dung khám theo Danh mục tại Phụ lục 3b)</span></div>            
+        </td>
+    </tr>
+    <tr>
+        <td style="
+          width: 400.2pt;
+          vertical-align: top;
+          border-left: 0.75px solid;
+          border-right: 0.75px solid;
+          border-bottom: 0.75px solid;
+          padding-right: 5.03pt;
+        ">
+          <div style="
+            margin-top: 0pt;
+            margin-bottom: 0pt;
+            line-height: 150%;
+            font-size: 12pt;
+            padding-top: 2px;
+            display: flex;
+            flex-direction: column;"
+          ">
+            <span style="font-style: italic; line-break:${BatThuong?.SanPhuKhoa ? 'auto' : 'anywhere'}">Kết quả khám: 
+              <span style="font-style: normal;">${BatThuong?.SanPhuKhoa  ||  '.'.repeat(898)}</span>
+            </span>
+
+            <span>Phân loại: ${PhanLoai?.SanPhuKhoa || '.'.repeat(114)}</span>
+          </div>
+        </td>
+
+        <td style="
+        width: 95.1pt;
+        padding-right: 5.03pt;
+        padding-left: 5.03pt;
+        vertical-align: top;
+        border-right: 0.75px solid;
+        border-bottom: 0.75px solid;
+            ">
+        </td>
+    </tr>
+
+
+    <tr>
+    </tr>
+</table>
+<div>
+<p style="margin-top: 0pt;margin-bottom: 0pt; text-align: center;">
+    <span style="font-weight: bold; 
+  ">IV. KHÁM CẬN LÂM SÀNG</span>
+</p>
+<table cellspacing="0" cellpadding="0" style="
+          width: 520.6pt;
+          border-spacing: collapse;
+      ">
+        <tr>
+            <td style="
+                width: 393pt;
+                border-top: 0.75pt solid;
+                border-left: 0.75pt solid;
+                border-right: 0.75pt solid;
+                padding-right: 5.03pt;
+                vertical-align: top;
+                  ">
+                <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    text-align: justify;
+                    line-height: 150%;
+                    font-size: 12pt;
+                ">
+                    <span>Xét nghiệm huyết học/sinh hóa/X.quang và các xét nghiệm khác khi có chỉ định của
+                        bác sỹ:</span>
+                </p>
+                <p style="
+                          margin-top: 0pt;
+                          margin-bottom: 0pt;
+                          line-height: 150%;
+                          font-size: 12pt;
+                      ">
+                    <span style="line-break: anywhere;">
+                        <span>a) Kết quả: :</span>
+                        &nbsp;${'.'.repeat(110)}
+                    </span>
+                </p>
+            </td>
+            <td style="
+                width: 103.1pt;
+                border-top: 0.75pt solid;
+                border-right: 0.75pt solid;
+                vertical-align: top;
+            ">
+                <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    line-height: 150%;
+                    font-size: 12pt;
+                ">
+                    <span style="-aw-import: ignore">&#xa0;</span>
+                </p>
+                <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    line-height: 150%;
+                    font-size: 12pt;
+                ">
+                    <span style="-aw-import: ignore">&#xa0;</span>
+                </p>
+               
+                <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                    <span style="line-break:anywhere;">
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                width: 393pt;
+                border-left: 0.75pt solid;
+                border-right: 0.75pt solid;
+                border-bottom: 0.75pt solid;
+                padding-right: 5.03pt;
+                vertical-align: top;
+                  ">
+                
+                  <p style="
+                          margin-top: 0pt;
+                          margin-bottom: 0pt;
+                          line-height: 150%;
+                          font-size: 12pt;
+                      ">
+                    <span style="line-break:anywhere;">
+                        <span>b) Đánh giá: </span>
+                        &nbsp;${'.'.repeat(110)}
+                    </span>
+                </p>
+            </td>
+            <td style="
+                width: 103.1pt;
+                border-right: 0.75pt solid;
+                border-bottom: 0.75pt solid;
+                padding-right: 5.03pt;
+                padding-left: 5.03pt;
+                vertical-align: top;
+            ">
+                
+                <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                    <span style="line-break:anywhere;">
+                    </span>
+                </p>
+            </td>
+        </tr>
+
+</table>
+<p style="
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        text-align: center;
+    ">
+    <span style="font-weight: bold;">V. KẾT LUẬN</span>
+</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; line-height: 150%;">
+    <span style="line-break: ${
+    khamBenh?.KetLuan?.PhanLoaiSucKhoe ? 'auto' : 'anywhere'
+  };">
+        <span style="font-weight: bold;">1. Phân loại sức khỏe: </span>
+        &nbsp;${khamBenh?.KetLuan?.PhanLoaiSucKhoe || '' }
+    </span>
+</p>
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; line-height: 150%;">
+    <span style="line-break: ${
+      khamBenh?.KetLuan?.BenhTats ? 'auto' : 'anywhere'
+    };">
+        <span style="font-weight: bold;">2. Các bệnh, tật (nếu có): </span>
+        &nbsp;${khamBenh?.KetLuan?.BenhTats || '.'.repeat(360)}
+    </span>
+</p>
+<table cellspacing="0" cellpadding="0" style="
+        width: 520pt;
+        margin-left: 5.4pt;
+       
+        border-spacing: -1px;
+    ">
+    <tr>
+        <td style="
+                width: 400.4pt;
+                padding-right: 5.4pt;
+                padding-left: 5.4pt;
+                vertical-align: top;
+            ">
+            <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                <span style="-aw-import: ignore">&#xa0;</span>
+            </p>
+            <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                <span style="-aw-import: ignore">&#xa0;</span>
+            </p>
+        </td>
+        <td style="
+                width: 328.9pt;
+                padding-right: 5.4pt;
+                padding-left: 5.4pt;
+                vertical-align: top;
+            ">
+            <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    text-align: center;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                <span style="font-style: italic">${appConfigState?.setting?.his?.Current_Location}, ngày ${moment().date()}
+                    tháng ${moment().month() + 1}
+                    năm ${moment().year()}</span>
+            </p>
+            <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    text-align: center;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                <span style="font-weight: bold;">NGƯỜI KẾT LUẬN</span>
+            </p>
+            <p style="
+                    margin-top: 0pt;
+                    margin-bottom: 0pt;
+                    text-align: center;
+                    line-height: 150%;
+                    font-size: 14pt;
+                ">
+                <span style="font-style: italic">(Ký, ghi rõ họ, tên và đóng dấu)</span>
+            </p>
+        </td>
+    </tr>
+</table>
+<p style="margin-top: 0pt; margin-bottom: 0pt">
+    <span style="-aw-import: ignore">&#xa0;</span>
+</p>
+</div>
+
+</div>
+</body>
+
+</html>
