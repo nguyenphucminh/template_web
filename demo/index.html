@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .number{
+            font-size: 12px;
+            border: 1px solid black;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>- Bắt đầu thấy kinh nguyệt năm bao nhiêu tuổi:
+        <span class="number">1</span>
+        <span class="number">4</span>
+        </span>
+    </div>
+    <script>
+        const currentYear = new Date().getFullYear().toString();
+        const lastTwoDigits = currentYear.slice(-2);
+
+        const SoThuTuKSK = "00004";
+        const increasedSoThuTuKSK = increaseNumberString(SoThuTuKSK);
+        const b = `${increasedSoThuTuKSK}/${lastTwoDigits}`;
+
+        console.log(b)
+
+        function increaseNumberString(numberString) {
+            let number = parseInt(numberString);
+            number += 1;
+            let result = number.toString().padStart(numberString.length, '0');
+            return result;
+        }
+
+
+    </script>
+</body>
+</html>
