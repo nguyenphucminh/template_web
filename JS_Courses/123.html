@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    DIV
+    <button>BUTTON</button>
+    </div>
+
+    <!-- Khi bấm vào chữ DIV nó sẽ in ra chữ DIV -->
+    <!-- Nhưng khi bấm vào button nó sẽ in ra chữ click me ! và chữ DIV -->
+    <!-- Vì button là nằm trong thẻ div nên button sẽ ảnh hưởng đến thẻ div (thẻ cha, thẻ ông, thẻ ngoài cùng của nó) -->
+    <!-- Phải ngăn hành vi ảnh hưởng này bằng sự kiện stopPropation, tức là chỉ xảy ra ở button không ảnh hưởng đến thẻ ngoài của nó -->
+
+    <script>
+        document.querySelector('div').onclick = function(e){console.log('DIV')}
+        document.querySelector('button').onclick = function(e){e.stopPropagation();  console.log('click me')}
+        const get = async () => {
+  
+        let image = await axios.get('https://test.jccomputing.sunny.net.vn/ecommerce_files/images/30d601a0-3feb-11ee-bcb2-5b6832e940e4--WSC-Logo-No-letters-LARGE-267x300.png', { responseType: 'arraybuffer', 
+            
+            // httpsAgent: agent
+        
+        }) 
+
+        
+        console.log(image)
+        }
+
+
+        get()
+    </script>
+</body>
+</html>
